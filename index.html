@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royel Nath | Full-Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="google-site-verification" content="AJOM4snkiQUk073f7ugxqRk0JTmVl85RFuCYaQJo51I" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="brand">
+        <svg width="35" height="35" viewBox="0 0 100 100" class="logo-svg">
+          <circle cx="50" cy="50" r="48" fill="var(--primary-color)" />
+          <text x="50%" y="55%" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold"
+            font-size="60" dominant-baseline="middle">R</text>
+        </svg>
+        ROYEL
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#certificates">Certificates</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle">🌙 Mode</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu"><i
+            class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <img src="image.jpg" alt="Royel Nath" class="profile-img" onerror="this.style.display='none'">
+      <h1>Hi, I'm Royel Nath</h1>
+      <p>Computer Science Student & Full-Stack Web Developer. Passionate about building practical solutions with modern
+        technology.</p>
+      <div>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container grid grid-2">
+      <div>
+        <h2 class="section-title">About Me</h2>
+        <p>I am a second-year B.Tech Computer Science student with a deep passion for full-stack web development.
+          Currently focused on mastering the MERN stack and exploring modern UI aesthetics.</p>
+        <div style="margin-top: 30px;">
+          <h4 style="margin-bottom: 15px;">Education</h4>
+          <div class="card" style="margin-bottom: 15px;">
+            <strong>B.Tech in Computer Science</strong><br>
+            <small>Dhemaji Engineering College | 2024 - 2028</small>
+          </div>
+          <div class="card" style="margin-bottom: 15px;">
+            <strong>Higher Secondary (Class XII)</strong><br>
+            <small>Govt. Gurdan H.S School Focus: Science (PCM)</small>
+          </div>
+        </div>
+      </div>
+      <div class="card learning-card">
+        <h3>Currently Learning</h3>
+        <ul style="margin-top: 20px;">
+          <li style="margin-bottom: 10px;"><i class="fa-solid fa-check-circle"></i> Advanced JavaScript (ES6+)</li>
+          <li style="margin-bottom: 10px;"><i class="fa-solid fa-check-circle"></i> Java Programming</li>
+          <li style="margin-bottom: 10px;"><i class="fa-solid fa-check-circle"></i> Database Management System</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="background: var(--section-bg);">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title" style="border: none; padding: 0;">My Tech Stack</h2>
+      <div class="skills-container" id="skillsContainer">
+        <!-- Filled dynamically from data.json by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Services I Offer</h2>
+      <div class="grid grid-3" id="servicesContainer">
+        <!-- Filled dynamically from data.json by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Recent Projects</h2>
+
+      <div class="projects-toolbar">
+        <input type="text" id="projectSearch" class="form-control search-box"
+          placeholder="Search projects by name, tech, or keyword...">
+        <div class="filter-pills" id="filterPills">
+          <!-- Filled dynamically: "All" + each category found in data.json -->
+        </div>
+      </div>
+
+      <div class="grid grid-3" id="projectsContainer">
+        <!-- Filled dynamically from data.json by script.js -->
+      </div>
+      <p class="no-results" id="noResults" style="display: none;">No projects match your search. Try a different
+        keyword or filter.</p>
+    </div>
+  </section>
+
+  <!-- Project detail modal: opened when a project card is clicked -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div id="modalBody">
+        <!-- Filled dynamically by script.js when a project is opened -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <section id="certificates" style="background: var(--section-bg);">
+    <div class="container">
+      <h2 class="section-title">Certificates</h2>
+      <div class="grid grid-3" id="certificatesContainer">
+      </div>
+      <p class="no-results" id="noCertificates" style="display: none;">Certificates coming soon &mdash; check back
+        shortly.</p>
+    </div>
+  </section> -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="card contact-card">
+        <h2 style="text-align: center; margin-bottom: 30px;">Let's Connect</h2>
+        <form id="contactForm" action="https://formsubmit.co/ajax/royelnath123@gmail.com">
+          <!-- Honeypot field for basic spam protection (hidden from real users via CSS) -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New message from your portfolio site">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" placeholder="email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="4" placeholder="How can I help you?"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn" style="width: 100%;">Send
+            Message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Designed &amp; Built by Royel Nath</p>
+      <div class="social-links">
+        <a href="https://github.com/royelnath" class="social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/royel_nath_10/" class="social-icon"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/Royel_nath_10" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:royelnath123@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Royel Nath. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+{
+  "skills": [
+    { "name": "HTML5 / CSS3" },
+    { "name": "JavaScript" },
+    { "name": "Node.js" },
+    { "name": "Express.js" },
+    { "name": "React.js" },
+    { "name": "MongoDB" }
+  ],
+  "services": [
+    {
+      "title": "Full-Stack Web Development",
+      "icon": "fa-solid fa-layer-group",
+      "description": "End-to-end web apps built on the MERN stack — from database schema to a polished, responsive UI."
+    },
+    {
+      "title": "Frontend Development",
+      "icon": "fa-solid fa-display",
+      "description": "Clean, responsive interfaces built with HTML, CSS, JavaScript and React, focused on usability."
+    },
+    {
+      "title": "REST API Development",
+      "icon": "fa-solid fa-network-wired",
+      "description": "Designing and building secure REST APIs with Node.js and Express, including JWT-based auth."
+    },
+    {
+      "title": "Database Design",
+      "icon": "fa-solid fa-database",
+      "description": "Structuring MongoDB collections and relationships for clean, performant data access."
+    }
+  ],
+  "certificates": [],
+  "projects": [
+    {
+      "id": "pharmacare-pro",
+      "title": "PharmaCare Pro",
+      "category": "Frontend",
+      "year": 2025,
+      "status": "Completed",
+      "image": "images/projects/pharmacare-pro.jpg",
+      "shortDescription": "Pharmacy management system with inventory alerts and digital prescription generation.",
+      "description": "PharmaCare Pro is a pharmacy-management concept built to demonstrate a complete workflow for handling medicine inventory and prescriptions through a clean, responsive interface — built as a front-end prototype focused on the UI/UX of the workflow.",
+      "features": [
+        "Inventory dashboard with low-stock and expiry alerts",
+        "Digital prescription generator",
+        "Clean, responsive pharmacy-themed interface",
+        "Organized, searchable medicine listing"
+      ],
+      "techStack": ["HTML5", "CSS3", "JavaScript"],
+      "demoLink": "https://royelnath.github.io/PharmaCare-Pro/",
+      "codeLink": "https://github.com/royelnath/PharmaCare-Pro"
+    },
+    {
+      "id": "lab-management-system",
+      "title": "Laboratory Management System",
+      "category": "Full-Stack",
+      "year": 2026,
+      "status": "In Development",
+      "image": "images/projects/lab-management-system.jpg",
+      "shortDescription": "Full-stack MERN app for running a diagnostic lab: doctors, patients, tests and prescriptions.",
+      "description": "A full-stack MERN application for managing a diagnostic laboratory. Admins, doctors and receptionists get role-based access to manage doctors, patients, tests and prescriptions, with built-in printing and email delivery for completed prescriptions.",
+      "features": [
+        "Role-based auth for Admin, Doctor and Receptionist (JWT)",
+        "Per-doctor test catalogue with pricing and discounts",
+        "Multi-step prescription builder with automatic billing",
+        "One-click prescription printing and email delivery via Gmail SMTP"
+      ],
+      "techStack": ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
+      "demoLink": "",
+      "codeLink": "https://github.com/royelnath/testing"
+    },
+    {
+      "id": "marg",
+      "title": "Marg — Student Career Guidance Platform",
+      "category": "Full-Stack",
+      "year": 2026,
+      "status": "In Development",
+      "image": "images/projects/marg.jpg",
+      "shortDescription": "MERN platform helping students explore career paths and request guidance from counselors.",
+      "description": "Marg is a student career-guidance platform covering the Science, Commerce, Arts and Law/Medicine streams. Students can explore careers and request counseling sessions, with OTP-based email verification and automatic confirmation emails handling the back-and-forth.",
+      "features": [
+        "OTP-based email verification for counseling requests",
+        "Automated confirmation emails for students and admins",
+        "Career resources across multiple academic streams",
+        "Protected routes and authenticated user sessions"
+      ],
+      "techStack": ["React", "Vite", "Firebase", "Node.js", "Express.js"],
+      "demoLink": "",
+      "codeLink": "https://github.com/royelnath/Marg"
+    },
+    {
+      "id": "js-mini-projects",
+      "title": "JavaScript Mini-Projects Collection",
+      "category": "Frontend",
+      "year": 2026,
+      "status": "Completed",
+      "image": "images/projects/js-mini-projects.jpg",
+      "shortDescription": "A growing collection of small vanilla-JS practice builds: clock, calculator, QR generator and more.",
+      "description": "A collection of small, self-contained front-end exercises built while practicing core JavaScript and DOM manipulation — each one focused on a single interaction pattern.",
+      "features": [
+        "Digital clock and a number-guessing game",
+        "Working calculator and QR code generator",
+        "Live character counter and click counter",
+        "Color-change and small UI experiments"
+      ],
+      "techStack": ["HTML5", "CSS3", "JavaScript"],
+      "demoLink": "",
+      "codeLink": "https://github.com/royelnath/Web-project"
+    }
+  ]
+}
